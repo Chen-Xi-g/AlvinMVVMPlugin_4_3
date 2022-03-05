@@ -1,0 +1,35 @@
+<idea-plugin>
+    <id>com.alvin.template</id>
+    <name>AlvinMVVMTemplate</name>
+    <vendo>Alvin</vendo>
+
+    <!-- Product and plugin compatibility requirements -->
+    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+
+    <depends>org.jetbrains.android</depends>
+    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <description>Alvin Android 快速开发插件，用于一键生成MVVM文件。</description>
+    <change-notes>初始化版本</change-notes>
+
+
+    <version>1.0.0</version>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService
+            serviceImplementation="com.alvin.template.services.MyApplicationService" />
+        <projectService serviceImplementation="com.alvin.template.services.MyProjectService" />
+    </extensions>
+
+    <applicationListeners>
+        <listener class="com.alvin.template.listeners.MyProjectManagerListener"
+            topic="com.intellij.openapi.project.ProjectManagerListener" />
+    </applicationListeners>
+
+    <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
+        <wizardTemplateProvider implementation="other.temparms.MVVMPluginTemplateProviderImpl" />
+    </extensions>
+</idea-plugin>
