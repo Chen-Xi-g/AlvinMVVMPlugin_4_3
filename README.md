@@ -16,6 +16,10 @@ Alvin Android 快速开发插件，用于一键生成MVVM文件。
   disk...</kbd>
   
   或者你可以下载代码, 使用AndroidStudio自行编译
+  
+## 使用
+
+在需要创建的目录下右键 -> New -> (Activity/Fragment) -> (AlvinMVVMActivity/AlvinMVVMFragment) -> 选择属性创建Activity/Fragment。
 
 ## 所用工具
 
