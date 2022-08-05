@@ -16,8 +16,6 @@ package $activityPackageName
 
 import android.os.Bundle
 import com.alvin.mvvm.base.activity.BaseListActivity
-import $rootPackageName.R
-import $rootPackageName.databinding.$dataBindingName
 import $viewModelPackageName.$viewModelName
 
 

@@ -96,7 +96,12 @@ fun RecipeExecutor.activityMVVMRecipe(
     }
 
     save(
-        mvvmViewModel(viewModelPackageName, activityPackageName, viewModelClass, time),
+        mvvmViewModel(
+            viewModelPackageName,
+            "$activityPackageName.$activityClass",
+            viewModelClass,
+            time
+        ),
         srcOut.resolve("view_model/activity/${viewModelClass}.kt")
     )
 

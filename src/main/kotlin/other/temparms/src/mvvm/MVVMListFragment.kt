@@ -15,8 +15,6 @@ package $fragmentPackageName
 import android.os.Bundle
 import android.view.View
 import com.alvin.mvvm.base.fragment.BaseListFragment
-import $rootPackageName.R
-import $rootPackageName.databinding.$dataBindingName
 import $viewModelPackageName.$viewModelName
 
 
